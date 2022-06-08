@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
@@ -22,12 +22,11 @@
 </head>
 
 <body>
-    WORK IN PROGRESS
-
     <main class="py-4">
+        WORK IN PROGRESS ciao
         @yield('content')
     </main>
-    </div>
+
 </body>
 
 </html>
