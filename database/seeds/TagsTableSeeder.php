@@ -14,7 +14,7 @@ class TagsTableSeeder extends Seeder
     public function run()
     {
         //
-        $tags = ['AustalianOpen', 'RolandGarros', 'Wimbledon', 'USOpen'];
+        $tags = ['Austalian Open', 'Roland Garros', 'Wimbledon', 'US Open'];
 
         foreach($tags as $tag) {
             $new_tag = new Tag();
