@@ -23,7 +23,7 @@
 
 <body>
     <main class="py-4">
-        WORK IN PROGRESS ciao
+        WORK IN PROGRESS Pagina FrontApp.blade
         @yield('content')
     </main>
 

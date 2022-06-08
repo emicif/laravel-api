@@ -25,7 +25,9 @@ window.axios.get('http://127.0.0.1:8000/api/posts').then(results => {
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+//Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+
+AppComponent = require('./app/AppComponent');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -37,4 +39,5 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
+    render: (h) => h(AppComponent) //'h' si può cambiare->es. start
 });
