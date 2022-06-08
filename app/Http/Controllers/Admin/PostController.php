@@ -22,7 +22,10 @@ class PostController extends Controller
     {
         //
         $posts = Post::all();
-        return view('admin.posts.index', compact('posts'));
+        $categories = Category::all();
+        $tags = Tag::all();
+
+        return view('admin.posts.index', compact('posts', 'categories', 'tags'));
     }
 
     /**

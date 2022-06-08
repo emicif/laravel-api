@@ -15,6 +15,8 @@
                         <th>ID</th>
                         <th>Titolo</th>
                         <th>Slug</th>
+
+                        <th>Category</th>
                         <th>Azioni</th>
                         <th>Tags</th>
                     </tr>
@@ -26,12 +28,18 @@
                             <td>{{ $post->id }}</td>
                             <td>{{ $post->title }}</td>
                             <td>{{ $post->slug }}</td>
+                            {{-- category --}}
+                            <td>{{ $post->category->name }}</td>
+
+                            {{-- action --}}
                             <td>
                                 <a class="btn btn-info"
                                     href="{{ route('admin.posts.show', ['post' => $post->id]) }}">SHOW</a>
                                 <a class="btn btn-warning"
                                     href="{{ route('admin.posts.edit', ['post' => $post->id]) }}">EDIT</a>
                             </td>
+
+                            {{-- tags --}}
                             <td>
                                 @foreach ($post->tags as $tag)
                                     <span>{{ $tag->name }}</span>

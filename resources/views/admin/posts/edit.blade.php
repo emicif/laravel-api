@@ -47,6 +47,7 @@
                         <textarea name="content" class="form-control" required>{{ old('content', $post->content) }}</textarea>
                     </div>
 
+                    {{-- category --}}
                     <div class="form-group">
                         <label>Categoria</label>
                         <select name="category_id">
