@@ -1,1 +1,1 @@
-@include('layout')
+@extends('layouts.front-app')
